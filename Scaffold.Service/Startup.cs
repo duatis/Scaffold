@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Scaffold.BusinessLogic.Contracts;
+using Scaffold.Data;
+using Scaffold.Data.Models;
 using Scaffold.Data.Repos;
 
 namespace Scaffold.Service
@@ -28,8 +30,8 @@ namespace Scaffold.Service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddScoped<IPirateRepo, BadPirateRepo>();
-            services.AddScoped<IPirateRepo, PirateRepo>();
+            services.AddTransient<IContext, BadContext>();
+            services.AddTransient<IPirateRepo, PirateRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,11 +45,7 @@ namespace Scaffold.Service
             app.UseHttpsRedirection();
 
             app.UseRouting();
-        
-            app.UseEndpoints(configure =>{
-                configure.MapControllerRoute("Default", "api/{controller}/{action}/{id}");
-            });
-
+              
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

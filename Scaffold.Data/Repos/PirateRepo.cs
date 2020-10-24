@@ -7,14 +7,12 @@ namespace Scaffold.Data.Repos
 {
     public class PirateRepo : IPirateRepo
     {
-        private List<IPirate> collection = new List<IPirate>()
+        private IEnumerable<IPirate> collection;
+        public PirateRepo(IContext context)
         {
-            new Pirate(){ Id = 0, Name = "Luffy", Status = "A" },
-            new Pirate(){ Id = 1, Name = "Zoro", Status = "A" },
-            new Pirate(){ Id = 2, Name = "Nami", Status = "A" },
-            new Pirate(){ Id = 3, Name = "Usoop", Status = "A" },
+            this.collection = context.Pirates;
+        }
 
-        };
         public string GetName(int Id)
         {
             return this.Get(Id)?.Name;

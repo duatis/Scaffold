@@ -5,10 +5,7 @@ namespace Scaffold.BusinessLogic.Managers
 {
     public class PirateManager : ManagerBase<IPirate>
     {
-        public PirateManager(IRepo<IPirate> _repo)
-        {
-            repo = _repo;
-        }
+        public PirateManager(IPirateRepo _repo): base(_repo){}
 
         public IPirate GetA(int Id)
         {
