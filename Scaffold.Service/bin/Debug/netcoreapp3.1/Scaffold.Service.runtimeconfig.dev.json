@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/home/zoro/.dotnet/store/|arch|/|tfm|",
-      "/home/zoro/.nuget/packages"
-    ]
-  }
-}
