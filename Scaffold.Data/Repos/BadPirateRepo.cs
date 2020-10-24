@@ -28,8 +28,10 @@ namespace Scaffold.Data.Repos
         }
 
         public IPirate Get(int id)
-        {
-            return this.query.Get(id);
+        { 
+            var tmp = this.query.Get(id);
+            tmp.Name = $"💀 {tmp.Name}";
+            return tmp;
         }
     }
 }

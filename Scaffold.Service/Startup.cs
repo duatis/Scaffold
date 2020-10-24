@@ -37,8 +37,8 @@ namespace Scaffold.Service
            
             services.AddTransient<IContext, Context>(); // Normal context with good pirates
             //services.AddTransient<IContext, BadContext>(); // Context with bad pirates
-            services.AddTransient<IPirateRepo, PirateRepo>(); // Normal repo (does nothing to pirates)
-            //services.AddTransient<IPirateRepo, BadPirateRepo>(); // Repo that shows the ugly part of the pirates
+            //services.AddTransient<IPirateRepo, PirateRepo>(); // Normal repo (does nothing to pirates)
+            services.AddTransient<IPirateRepo, BadPirateRepo>(); // Repo that shows the ugly part of the pirates
             services.AddTransient<IPirateQuery, PirateQuery>();
             services.AddTransient<IPirateCommand, PirateCommand>();
             
