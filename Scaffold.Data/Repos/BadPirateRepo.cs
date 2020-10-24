@@ -2,28 +2,34 @@ using System.Collections.Generic;
 using Scaffold.BusinessLogic.Contracts;
 using Scaffold.Data.Models;
 using System.Linq;
+using Scaffold.Data.Contracts;
 
 namespace Scaffold.Data.Repos
 {
     // Repo that turns good pirates into bad and bad pirates into worst
     public class BadPirateRepo : IPirateRepo
     {
-        private IEnumerable<IPirate> collection;
-
-        public BadPirateRepo(IContext context)
+      protected IPirateQuery query;
+        protected IPirateCommand command;
+        public BadPirateRepo(IPirateQuery query, IPirateCommand command)
         {
-            collection = context.Pirates;
+            this.query = query;
+            this.command = command;
         }
+
         public string GetName(int Id)
         {
             return this.Get(Id)?.Name;
         }
 
-        public IPirate Get(int Id)
+        public IPirate Save(Pirate entity)
         {
-            var tmp = this.collection.FirstOrDefault( x => x.Id == Id );
-            tmp.Name = $"💀 {tmp.Name}";
-            return tmp;
+            return command.Save(entity);
+        }
+
+        public IPirate Get(int id)
+        {
+            return this.query.Get(id);
         }
     }
 }

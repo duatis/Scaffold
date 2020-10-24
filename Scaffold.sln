@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaffold.Service", "Scaffol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaffold.BusinessLogic", "Scaffold.BusinessLogic\Scaffold.BusinessLogic.csproj", "{98AE3D6B-0362-4D70-BDAE-FFCDA1D472BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaffold.Data", "Scaffold.Data\Scaffold.Data.csproj", "{91F7809C-29A3-4E39-9FFF-4CF5294A1711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaffold.Data.Query", "Scaffold.Data.Query\Scaffold.Data.Query.csproj", "{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaffold.Data.Command", "Scaffold.Data.Command\Scaffold.Data.Command.csproj", "{F77D1733-2F98-4501-B949-B3B0301DD186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +50,41 @@ Global
 		{98AE3D6B-0362-4D70-BDAE-FFCDA1D472BE}.Release|x64.Build.0 = Release|Any CPU
 		{98AE3D6B-0362-4D70-BDAE-FFCDA1D472BE}.Release|x86.ActiveCfg = Release|Any CPU
 		{98AE3D6B-0362-4D70-BDAE-FFCDA1D472BE}.Release|x86.Build.0 = Release|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Debug|x64.Build.0 = Debug|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Debug|x86.Build.0 = Debug|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Release|x64.ActiveCfg = Release|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Release|x64.Build.0 = Release|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Release|x86.ActiveCfg = Release|Any CPU
+		{91F7809C-29A3-4E39-9FFF-4CF5294A1711}.Release|x86.Build.0 = Release|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Debug|x64.Build.0 = Debug|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Debug|x86.Build.0 = Debug|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Release|x64.ActiveCfg = Release|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Release|x64.Build.0 = Release|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Release|x86.ActiveCfg = Release|Any CPU
+		{E70D2DC7-4B0B-4C7B-A043-76BBB9BCFADF}.Release|x86.Build.0 = Release|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Debug|x64.Build.0 = Debug|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Debug|x86.Build.0 = Debug|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Release|x64.ActiveCfg = Release|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Release|x64.Build.0 = Release|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Release|x86.ActiveCfg = Release|Any CPU
+		{F77D1733-2F98-4501-B949-B3B0301DD186}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

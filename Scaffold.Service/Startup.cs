@@ -12,7 +12,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Scaffold.BusinessLogic.Contracts;
 using Scaffold.Data;
+using Scaffold.Data.Command;
+using Scaffold.Data.Contracts;
 using Scaffold.Data.Models;
+using Scaffold.Data.Query;
 using Scaffold.Data.Repos;
 
 namespace Scaffold.Service
@@ -31,10 +34,14 @@ namespace Scaffold.Service
         {
             services.AddControllers();
             
-            //services.AddTransient<IContext, Context>(); // Normal context with good pirates
-            services.AddTransient<IContext, BadContext>(); // Context with bad pirates
+           
+            services.AddTransient<IContext, Context>(); // Normal context with good pirates
+            //services.AddTransient<IContext, BadContext>(); // Context with bad pirates
             services.AddTransient<IPirateRepo, PirateRepo>(); // Normal repo (does nothing to pirates)
             //services.AddTransient<IPirateRepo, BadPirateRepo>(); // Repo that shows the ugly part of the pirates
+            services.AddTransient<IPirateQuery, PirateQuery>();
+            services.AddTransient<IPirateCommand, PirateCommand>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

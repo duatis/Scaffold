@@ -13,6 +13,5 @@ namespace Scaffold.Data
             new Pirate(){ Id = 1, Name = "Black Beard", Status = "A" },
             new Pirate(){ Id = 2, Name = "Moria", Status = "A" }
         };
-
     }
 }

@@ -2,16 +2,19 @@ using System.Collections.Generic;
 using Scaffold.BusinessLogic.Contracts;
 using Scaffold.Data.Models;
 using System.Linq;
+using Scaffold.Data.Contracts;
 
 namespace Scaffold.Data.Repos
 {
     // Normal repo for pirates
     public class PirateRepo : IPirateRepo
     {
-        private IEnumerable<IPirate> collection;
-        public PirateRepo(IContext context)
+        protected IPirateQuery query;
+        protected IPirateCommand command;
+        public PirateRepo(IPirateQuery query, IPirateCommand command)
         {
-            this.collection = context.Pirates;
+            this.query = query;
+            this.command = command;
         }
 
         public string GetName(int Id)
@@ -19,9 +22,14 @@ namespace Scaffold.Data.Repos
             return this.Get(Id)?.Name;
         }
 
-        public IPirate Get(int Id)
+        public IPirate Save(Pirate entity)
         {
-            return this.collection.FirstOrDefault( x => x.Id == Id );
+            return command.Save(entity);
+        }
+
+        public IPirate Get(int id)
+        {
+            return this.query.Get(id);
         }
     }
 }

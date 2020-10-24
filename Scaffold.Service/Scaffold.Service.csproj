@@ -3,6 +3,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Scaffold.BusinessLogic\Scaffold.BusinessLogic.csproj" />
     <ProjectReference Include="..\Scaffold.Data\Scaffold.Data.csproj" />
+    <ProjectReference Include="..\Scaffold.Data.Query\Scaffold.Data.Query.csproj" />
+    <ProjectReference Include="..\Scaffold.Data.Command\Scaffold.Data.Command.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
