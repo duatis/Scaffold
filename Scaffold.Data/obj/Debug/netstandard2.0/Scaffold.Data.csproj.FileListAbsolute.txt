@@ -1,0 +1,11 @@
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/bin/Debug/netstandard2.0/Scaffold.Data.deps.json
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/bin/Debug/netstandard2.0/Scaffold.Data.dll
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/bin/Debug/netstandard2.0/Scaffold.Data.pdb
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/bin/Debug/netstandard2.0/Scaffold.BusinessLogic.dll
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/bin/Debug/netstandard2.0/Scaffold.BusinessLogic.pdb
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/obj/Debug/netstandard2.0/Scaffold.Data.csprojAssemblyReference.cache
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/obj/Debug/netstandard2.0/Scaffold.Data.AssemblyInfoInputs.cache
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/obj/Debug/netstandard2.0/Scaffold.Data.AssemblyInfo.cs
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/obj/Debug/netstandard2.0/Scaffold.Data.csproj.CopyComplete
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/obj/Debug/netstandard2.0/Scaffold.Data.dll
+/home/zoro/Development/Net5/Scaffold/Scaffold.Data/obj/Debug/netstandard2.0/Scaffold.Data.pdb

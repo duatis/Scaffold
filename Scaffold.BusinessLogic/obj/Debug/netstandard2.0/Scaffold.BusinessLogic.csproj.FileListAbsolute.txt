@@ -1,0 +1,8 @@
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/bin/Debug/netstandard2.0/Scaffold.BusinessLogic.deps.json
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/bin/Debug/netstandard2.0/Scaffold.BusinessLogic.dll
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/bin/Debug/netstandard2.0/Scaffold.BusinessLogic.pdb
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/obj/Debug/netstandard2.0/Scaffold.BusinessLogic.csprojAssemblyReference.cache
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/obj/Debug/netstandard2.0/Scaffold.BusinessLogic.AssemblyInfoInputs.cache
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/obj/Debug/netstandard2.0/Scaffold.BusinessLogic.AssemblyInfo.cs
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/obj/Debug/netstandard2.0/Scaffold.BusinessLogic.dll
+/home/zoro/Development/Net5/Scaffold/Scaffold.BusinessLogic/obj/Debug/netstandard2.0/Scaffold.BusinessLogic.pdb
