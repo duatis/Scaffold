@@ -4,6 +4,7 @@ using Scaffold.Data.Models;
 
 namespace Scaffold.Data
 {
+    // Context with bad pirates
     public class BadContext : IContext
     {
         public IEnumerable<IPirate> Pirates => new List<IPirate>()

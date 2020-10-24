@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace Scaffold.Data.Repos
 {
+    // Repo that turns good pirates into bad and bad pirates into worst
     public class BadPirateRepo : IPirateRepo
     {
         private List<IPirate> collection = new List<IPirate>()
@@ -20,7 +21,9 @@ namespace Scaffold.Data.Repos
 
         public IPirate Get(int Id)
         {
-            return this.collection.FirstOrDefault( x => x.Id == Id );
+            var tmp = this.collection.FirstOrDefault( x => x.Id == Id );
+            tmp.Name = $"💀 {tmp.Name}";
+            return tmp;
         }
     }
 }

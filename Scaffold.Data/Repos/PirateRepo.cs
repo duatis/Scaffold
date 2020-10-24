@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace Scaffold.Data.Repos
 {
+    // Normal repo for pirates
     public class PirateRepo : IPirateRepo
     {
         private IEnumerable<IPirate> collection;

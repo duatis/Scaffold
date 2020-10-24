@@ -30,8 +30,11 @@ namespace Scaffold.Service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<IContext, BadContext>();
-            services.AddTransient<IPirateRepo, PirateRepo>();
+            
+            //services.AddTransient<IContext, Context>(); // Normal context with good pirates
+            services.AddTransient<IContext, BadContext>(); // Context with bad pirates
+            //services.AddTransient<IPirateRepo, PirateRepo>(); // Normal repo (does nothing to pirates)
+            services.AddTransient<IPirateRepo, BadPirateRepo>(); // Repo that shows the ugly part of the pirates
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,7 +48,7 @@ namespace Scaffold.Service
             app.UseHttpsRedirection();
 
             app.UseRouting();
-              
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
