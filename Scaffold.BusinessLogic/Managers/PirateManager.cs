@@ -7,10 +7,11 @@ namespace Scaffold.BusinessLogic.Managers
     {
         public PirateManager(IPirateRepo _repo): base(_repo){}
 
-        public IPirate GetA(int Id)
+        // example of overriding parent methods
+        public override IPirate Get(int Id)
         {
-            var tmp = Get(Id);
-            tmp.Status = "A";
+            var tmp = base.Get(Id);
+            tmp.Status = "Z";
             return tmp;
         }
     }
