@@ -8,12 +8,12 @@ namespace Scaffold.Data.Repos
     // Repo that turns good pirates into bad and bad pirates into worst
     public class BadPirateRepo : IPirateRepo
     {
-        private List<IPirate> collection = new List<IPirate>()
+        private IEnumerable<IPirate> collection;
+
+        public BadPirateRepo(IContext context)
         {
-            new Pirate(){ Id = 0, Name = "Buggy", Status = "A" },
-            new Pirate(){ Id = 1, Name = "Black Beard", Status = "A" },
-            new Pirate(){ Id = 2, Name = "Moria", Status = "A" }
-        };
+            collection = context.Pirates;
+        }
         public string GetName(int Id)
         {
             return this.Get(Id)?.Name;
